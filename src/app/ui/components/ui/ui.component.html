@@ -1,7 +1,7 @@
 <header class="fixed-top">
-  icon + header content
+  <app-icon-nav (click)="toggle()"></app-icon-nav>
 </header>
-<main>
+<main [ngClass]="{'close-aside': !open}">
   <div class="shadow position-fixed">
   </div>
   <aside>
