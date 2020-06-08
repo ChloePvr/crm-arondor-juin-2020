@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crm-juin-arondor';
+  public title = 'crm-juin-arondor';
+  constructor() {}
+  public sayHello() {
+    console.log('Hello girls :-) ')
+  }
 }
