@@ -3,5 +3,13 @@
   <app-header class="header"></app-header>
   <app-nav class="nav"></app-nav>
   <!-- dynamic projection by rooter for pages -->
+  <app-template-one-col title="test title" [bgColorThree]='true' class="content">
+    <h2>subtitle</h2>
+    <p>test projection in ng-content</p>
+  </app-template-one-col>
+  <!-- <app-template-two-col title="test title" class="content">
+    <p class="left">test projection in ng-content left</p>
+    <p class="right">test projection in ng-content right</p>
+  </app-template-two-col> -->
   <app-footer class="footer"></app-footer>
 </app-ui>
