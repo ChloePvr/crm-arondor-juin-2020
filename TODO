@@ -1,0 +1,17 @@
+☐ Interface pour nav component navItem
+☐ Page list orders
+☐ Enum StateOrders
+☐ Interface Order
+☐ Modèle Order
+☐ Installer json-server (fake api rest full côté front)
+☐ Service Orders
+☐ Appel http et les observables
+☐ TableauLightComponent (stupid)
+☐ Directives angular
+☐ Directives perso
+☐ Pipe perso
+☐ BtnComponent (stupid)
+
+☐ TP : page list clients en prenant exemple sur page list orders
+
+☐ TP ? créer un thème à partir d'une propriété dans un service ?
