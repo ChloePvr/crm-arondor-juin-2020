@@ -5,7 +5,7 @@
   <ng-container class="contents" >
     <!-- ngIf"collection" permet d'afficher le tableau uniquement quand collection est different de undefined (appel asynchrone).
       Sinon cela déclenche plusieurs évènements ngOnChanges et cela joue sur les performances de l'application -->
-    <app-table *ngIf="collection" [headers]="headers">
+    <app-table *ngIf="collection$ | async as collection" [headers]="headers">
       <tr *ngFor="let item of collection">
         <td>{{ item.typePresta }}</td>
         <td>{{ item.client }}</td>
@@ -23,6 +23,7 @@
 
     <app-btn [route]="btnRoute.route" [label]="btnRoute.label"></app-btn>
     <app-btn [href]="btnHref.href" [label]="btnHref.label"></app-btn>
-    <app-btn [action]="btnAction.action" [label]="btnAction.label"></app-btn>
+    <app-btn [action]="btnAction.action" [label]="btnAction.label" (clicked)="popup()"></app-btn>
+    <!-- <app-btn [action]="btnAction.action" [label]="btnAction.label" (clicked)="popup($event)"></app-btn> -->
   </ng-container>
 </app-template-one-col>

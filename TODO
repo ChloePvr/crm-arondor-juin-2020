@@ -6,13 +6,21 @@
 ✔ Installer json-server (fake api rest full côté front) @done(20-06-10 10:42)
 ✔ Service Orders @started(20-06-10 10:42) @done(20-06-10 13:57) @lasted(3h15m37s)
 ✔ Appel http et les observables @done(20-06-10 13:57)
-☐ TableauLightComponent (stupid)
+✔ TableauLightComponent (stupid) @done(20-06-11 12:07)
 ✔ Life cycles @done(20-06-10 17:04)
 ✔ Directives angular @done(20-06-10 17:04)
-☐ Directives perso
+✔ Directives perso @done(20-06-11 12:07)
 ✔ Pipe perso @done(20-06-10 17:04)
-☐ BtnComponent (stupid)
+✔ Pipe asynchrone @done(20-06-11 13:36)
+✔ BtnComponent (stupid) @done(20-06-11 12:07)
 
 ☐ TP : page list clients en prenant exemple sur page list orders
+  ☐ creer un enum state-client (ACTIVE INACTIVE)
+  ☐ créer l'interface ClientI (voir db.json)
+  ☐ modèle Client (class)
+  ☐ service ClientsService
+  ☐ page list-client (template-one-col, app-text, table, state-directive, btn (clients/add))
+  ☐ table scss ajouter les selecteurs .state-active et .state-inactive
+
 
 ☐ TP ? créer un thème à partir d'une propriété dans un service ?
