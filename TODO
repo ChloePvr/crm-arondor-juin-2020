@@ -7,10 +7,10 @@
 ✔ Service Orders @started(20-06-10 10:42) @done(20-06-10 13:57) @lasted(3h15m37s)
 ✔ Appel http et les observables @done(20-06-10 13:57)
 ☐ TableauLightComponent (stupid)
-☐ Life cycles
-☐ Directives angular
+✔ Life cycles @done(20-06-10 17:04)
+✔ Directives angular @done(20-06-10 17:04)
 ☐ Directives perso
-☐ Pipe perso
+✔ Pipe perso @done(20-06-10 17:04)
 ☐ BtnComponent (stupid)
 
 ☐ TP : page list clients en prenant exemple sur page list orders
