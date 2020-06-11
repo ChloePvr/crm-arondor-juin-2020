@@ -14,13 +14,27 @@
 ✔ Pipe asynchrone @done(20-06-11 13:36)
 ✔ BtnComponent (stupid) @done(20-06-11 12:07)
 
-☐ TP : page list clients en prenant exemple sur page list orders
-  ☐ creer un enum state-client (ACTIVE INACTIVE)
-  ☐ créer l'interface ClientI (voir db.json)
-  ☐ modèle Client (class)
-  ☐ service ClientsService
-  ☐ page list-client (template-one-col, app-text, table, state-directive, btn (clients/add))
-  ☐ table scss ajouter les selecteurs .state-active et .state-inactive
+✔ TP : page list clients en prenant exemple sur page list orders @done(20-06-11 17:08)
+  ✔ creer un enum state-client (ACTIVE INACTIVE) @done(20-06-11 17:08)
+  ✔ créer l'interface ClientI (voir db.json) @done(20-06-11 17:08)
+  ✔ modèle Client (class) @done(20-06-11 17:08)
+  ✔ service ClientsService @done(20-06-11 17:08)
+  ✔ page list-client (template-one-col, app-text, table, state-directive, btn (clients/add)) @done(20-06-11 17:08)
+  ✔ table scss ajouter les selecteurs .state-active et .state-inactive @done(20-06-11 17:08)
+
+✔ ReactiveFormsModule @done(20-06-11 17:08)
+✔ FormGroup @done(20-06-11 17:08)
+✔ FormControl @done(20-06-11 17:08)
+✔ FormBuilder @done(20-06-11 17:08)
+✔ Binding FormGroup et FormControl avec le html @done(20-06-11 17:08)
+✔ Initialiser les FormControl @done(20-06-11 17:08)
+
+☐ ngSubmit
+☐ @Output()
+☐ Validators
+☐ Rendre le bouton d'envoi disable si Validators invalide
+☐ Message d'erreur
+☐ Signaux d'erreur grâce au css et aux validateurs
 
 
 ☐ TP ? créer un thème à partir d'une propriété dans un service ?
