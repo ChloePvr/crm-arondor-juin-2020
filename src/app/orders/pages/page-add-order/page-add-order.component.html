@@ -5,6 +5,6 @@
 
 
   <ng-container class="contents" >
-    <app-form-order [initFormItem]="initFormItem"></app-form-order>
+    <app-form-order [initFormItem]="initFormItem" (submited)="onSubmited($event)"></app-form-order>
   </ng-container>
 </app-template-one-col>

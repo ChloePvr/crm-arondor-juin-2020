@@ -29,12 +29,13 @@
 ✔ Binding FormGroup et FormControl avec le html @done(20-06-11 17:08)
 ✔ Initialiser les FormControl @done(20-06-11 17:08)
 
-☐ ngSubmit
-☐ @Output()
-☐ Validators
-☐ Rendre le bouton d'envoi disable si Validators invalide
-☐ Message d'erreur
-☐ Signaux d'erreur grâce au css et aux validateurs
+✔ ngSubmit @done(20-06-12 09:44)
+✔ @Output() @done(20-06-12 09:44)
+✔ Validators @done(20-06-12 09:44)
+✔ Rendre le bouton d'envoi disable si Validators invalide @done(20-06-12 09:44)
+✔ Message d'erreur @done(20-06-12 09:44)
+✔ Signaux d'erreur grâce au css et aux validateurs @done(20-06-12 09:51)
 
-
+☐ TP edit
+☐ TP delete (observable chaud pour la collection)
 ☐ TP ? créer un thème à partir d'une propriété dans un service ?

@@ -39,6 +39,16 @@
       "client": "Atos",
       "comment": "Comment pour Atos",
       "id": 4
+    },
+    {
+      "tjmHt": 600,
+      "nbJours": 2,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "Coaching",
+      "client": "Capgemini",
+      "comment": "test création",
+      "id": 5
     }
   ],
   "customers": [

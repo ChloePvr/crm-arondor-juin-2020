@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { StateOrder } from 'src/app/core/enums/state-order.enum';
 import { Order } from 'src/app/core/models/order';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form-order',
@@ -12,6 +12,7 @@ export class FormOrderComponent implements OnInit {
   public states = Object.values(StateOrder);
   public form: FormGroup;
   @Input() initFormItem: Order;
+  @Output() submited: EventEmitter<Order> = new EventEmitter() ;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -20,11 +21,20 @@ export class FormOrderComponent implements OnInit {
       nbJours: [this.initFormItem.nbJours],
       tva: [this.initFormItem.tva],
       state: [this.initFormItem.state],
-      typePresta: [this.initFormItem.typePresta],
-      client: [this.initFormItem.client],
+      typePresta: [
+        this.initFormItem.typePresta,
+        Validators.required
+      ],
+      client: [
+        this.initFormItem.client,
+        [Validators.required, Validators.minLength(2)]
+       ],
       comment: [this.initFormItem.comment],
       id: [this.initFormItem.id]
     });
   }
 
+  public onSubmit() {
+    this.submited.emit(this.form.value);
+  }
 }
