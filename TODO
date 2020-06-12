@@ -36,9 +36,29 @@
 ✔ Message d'erreur @done(20-06-12 09:44)
 ✔ Signaux d'erreur grâce au css et aux validateurs @done(20-06-12 09:51)
 
-☐ TP edit
-☐ TP delete (observable chaud pour la collection)
-☐ TP ? créer un thème à partir d'une propriété dans un service ?
+✔ TP form add client @done(20-06-12 10:15)
+✔ TP delete (observable chaud pour la collection) @done(20-06-12 11:25)
+  ✔ ajouter une colone Action dans le tableau (page list order ts) @done(20-06-12 11:25)
+  ✔ ajouter un td avec une icone delete dans le tableau (page list order) @done(20-06-12 11:25)
+  ✔ ajouter un (click)=delete(item) sur cet icon @done(20-06-12 11:25)
+  ✔ créer la fonction delete(item: Order) dans page list order ts @done(20-06-12 11:25)
+  ✔ créer la fonction deleteItem(item: Order ou id: number) dans le service @done(20-06-12 11:25)
+  ✔ modifier app page list order ts pour avoir un observable chaud pour collection$ @done(20-06-12 11:25)
+  ✔ initialiser collection$ avec un appel http (this.os.collection.subscribe()) @done(20-06-12 11:25)
+  ✔ dans la fonction delete() page list order ts, dans le subscribe on actualise collection$ avec un nouvel appel http (this.os.collection.subscribe()) @done(20-06-12 11:25)
 
-add client => client/add
-formulaire client validator + error message
+✔ TP edit @done(20-06-12 14:56)
+  ✔ add icon edit dans colonne action @done(20-06-12 14:56)
+  ✔ add (click)="edit(item)" sur cet icon @done(20-06-12 14:56)
+  ✔ edit(item) fait une redirection vers la route orders/edit/id @done(20-06-12 14:56)
+  ✔ créer une route pour edit qui prend un paramètre id dans l'url @done(20-06-12 14:56)
+  ✔ créer le component PageEditOrderComponent @done(20-06-12 14:56)
+  ✔ ts de PageEditOrderComponent récupérer l'id qui se trouve dans l'url (ActivatedRoute) @done(20-06-12 14:56)
+  ✔ call this.os.getIdemById(id:number ou string?): Observable<Order> @done(20-06-12 14:56)
+  ✔ l'observable qui vous est retourné par cette méthode sert à initialiser un observable item$: Observable<Order> et qui est déclaré plus haut sur PageEditOrderComponent ts) @done(20-06-12 14:56)
+  ✔ dans le page-edit-order.html, utiliser template-one-col, app-text, app-form-order @done(20-06-12 14:56)
+  ✔ cette fois ci, l'input initFormItem doit être bindé avec item$ (utiliser | async) ex avec collection$ dans html de page list order @done(20-06-12 14:56)
+  ✔ dans page edit order html on garde le même @Output() avec le même appel de onSubmitted($event) que dans la page add order html @done(20-06-12 14:56)
+  ✔ la fonction onSubmited(item: Order) dans page-edit-order.ts va utiliser this.os.updateItem(item) @done(20-06-12 14:56)
+  ✔ dans le subscribe() de this.os.updateItem(item), vous redirigez l'utilisateur vers la route orders (ex dans add component ts) @done(20-06-12 14:56)
+
