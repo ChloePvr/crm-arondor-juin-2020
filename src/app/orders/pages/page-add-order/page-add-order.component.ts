@@ -25,5 +25,4 @@ export class PageAddOrderComponent implements OnInit {
       //this.router.navigate(['orders','articles','test',item.id]);
     });
   }
-
 }

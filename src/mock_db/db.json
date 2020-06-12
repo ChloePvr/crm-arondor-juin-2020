@@ -67,6 +67,14 @@
       "name": "Modis",
       "ca": 120000,
       "comment": "un comment pour client modis"
+    },
+    {
+      "name": "Arondor",
+      "ca": "1000000",
+      "tva": 20,
+      "state": "ACTIVE",
+      "comment": "test création customer",
+      "id": 3
     }
   ]
 }

@@ -1,0 +1,10 @@
+<app-template-one-col [title]="true">
+  <app-text class="title" [colorLight]="true">
+    <h1>Add customer</h1>
+  </app-text>
+
+
+  <ng-container class="contents" >
+    <app-form-customer [initFormItem]="initFormItem" (submited)="onSubmited($event)"></app-form-customer>
+  </ng-container>
+</app-template-one-col>

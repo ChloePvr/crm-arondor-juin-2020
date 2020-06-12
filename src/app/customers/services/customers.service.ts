@@ -36,4 +36,9 @@ export class CustomersService {
   public updateItem(item: Customer): Observable<Customer> {
     return this.http.patch<Customer>(`${this.urlApi}customers/${item.id}`,item);
   }
+
+  // add item in collection
+  public addItem(item: Customer): Observable<Customer> {
+    return this.http.post<Customer>(`${this.urlApi}customers`,item);
+  }
 }

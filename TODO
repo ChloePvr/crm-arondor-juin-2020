@@ -39,3 +39,6 @@
 ☐ TP edit
 ☐ TP delete (observable chaud pour la collection)
 ☐ TP ? créer un thème à partir d'une propriété dans un service ?
+
+add client => client/add
+formulaire client validator + error message
